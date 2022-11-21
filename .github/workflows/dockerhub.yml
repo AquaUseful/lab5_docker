@@ -37,4 +37,7 @@ jobs:
         name: "Docker build & push"
         id: "build"
         uses: docker/build-push-action@v3.2.0
-          
+        with:
+          dockerfile: ./Dockerfile
+          push: true
+          tags: catsatan/lab5:latest
